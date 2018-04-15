@@ -10,7 +10,6 @@ import javax.swing.JOptionPane;
 public class DontForgetTheLyrics {
 	
 	public static void main(String[] args) {
-		// 4. Make a pop-up to explain the game.
 		int score = 0;
 		JOptionPane.showMessageDialog(null, "We are going to play NameThatTune. I will play a song, and you will have to guess it. Inital Caps, please!");
 		playSound("Good Kid.wav");
