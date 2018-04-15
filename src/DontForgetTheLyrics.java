@@ -1,17 +1,12 @@
-//    Copyright (c) The League of Amazing Programmers 2013-2017
-//    Level 0
-
-
 import java.applet.AudioClip;
 
 import javax.swing.JApplet;
 import javax.swing.JOptionPane;
 
 public class DontForgetTheLyrics {
-	
 	public static void main(String[] args) {
 		int score = 0;
-		JOptionPane.showMessageDialog(null, "We are going to play NameThatTune. I will play a song, and you will have to guess it. Inital Caps, please!");
+		JOptionPane.showMessageDialog(null, "We are going to play NameThatTune. I will play a song, and you will have to guess it. Inital Caps on each word, please!");
 		playSound("Good Kid.wav");
 		String guess = JOptionPane.showInputDialog(null, "What's your guess?");
 		if (guess.equals("Good Kid")) {
@@ -78,7 +73,6 @@ public class DontForgetTheLyrics {
 			playSound("wrong.wav");
 			JOptionPane.showMessageDialog(null, "Sorry! Not correct! The answer was Getting To Know You!");
 		}
-		// 10. [optional] Add a points variable that will calculate their final score.
 		JOptionPane.showMessageDialog(null, "Your score was " + score + "/6! Thanks for playing Samuel and Gigi's NameTheTune!");
 		JOptionPane.showMessageDialog(null, "Come back soon!");
 	}
