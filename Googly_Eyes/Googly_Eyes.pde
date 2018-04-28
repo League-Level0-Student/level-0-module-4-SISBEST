@@ -7,20 +7,20 @@ void draw(){
   ellipse(200,500,200,200);
   ellipse(500,500,200,200);
   fill(0,255,0);
+  int x = mouseX;
+  int y = mouseY;
   if (mouseX>250){
-    ellipse(250,mouseY,100,100);
-    ellipse(250 + 300,mouseY,100,100);
+  x = 250;
   }
   else if (mouseX<150){
-    ellipse(150,mouseY,100,100);
-    ellipse(150 + 300,mouseY,100,100);
+  x = 150;
   }
-  else if (mouseY<350){
-    ellipse(mouseX,350,100,100);
-    ellipse(mouseX+300,350,100,100);
+  if (mouseY<450){
+  y = 450;
   }
-  else{
-    ellipse(mouseX,mouseY,100,100);
-    ellipse(mouseX + 300,mouseY,100,100);
+  else if (mouseY>550){
+  y = 550;
   }
+    ellipse(x,y,100,100);
+    ellipse(x + 300,y,100,100);
 }
